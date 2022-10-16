@@ -45,6 +45,8 @@ namespace Practica0
                     switch (servicio = int.Parse(Console.ReadLine())) 
                     {
                      case 1:
+                     case 2:
+                     case 3:
                      Console.Clear();
                      Console.WriteLine("\nLos siguientes cajeros le permiten pagar servicios publicos\n" +
                     "por favor elija una opción de cajero:\n" +
@@ -79,78 +81,6 @@ namespace Practica0
                             } Console.ReadKey();
                             break;
 
-                     case 2:
-                            Console.Clear();
-                            Console.WriteLine("\nLos siguientes cajeros le permiten cambiar cheques\n" +
-                           "por favor elija una opción de cajero:\n" +
-                           "1.- Cajero 1\n" +
-                           "2.- Cajero 2\n" +
-                           "3.- Cajero 3\n");
-                            Console.Write(" Ingrese una opción: \n");
-                            switch (servicioCajero = int.Parse(Console.ReadLine()))
-                            {
-                                case 1:
-                                    Console.WriteLine("\nEl cajero 1 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                            "1.- Pago de servicios públicos\n" +
-                            "2.- Cambio de cheques\n" +
-                            "3.- Realice un depósito\n" +
-                            "4.- Emisión de tarjetas de crédito, débito y prepago\n");
-                                    break;
-
-                                case 2:
-                                    Console.WriteLine("\nEl cajero 2 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                                   "1.- Pago de servicios públicos\n" +
-                                   "2.- Cambio de cheques\n" +
-                                   "3.- Realice un depósito\n" +
-                                   "4.- Emisión de Chequeras\n");
-                                    break;
-
-                                case 3:
-                                    Console.WriteLine("\nEl cajero 3 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                                    "1.- Pago de servicios públicos\n" +
-                                    "2.- Cambio de cheques\n" +
-                                    "3.- Realice un depósito\n" +
-                                    "4.- Créditos hipotecarios y préstamos para autos\n");
-                                    break;
-                            }
-                            Console.ReadKey();
-                            break;
-                     case 3:
-                            Console.Clear();
-                            Console.WriteLine("\nLos siguientes cajeros le permiten realizar depósitos\n" +
-                           "por favor elija una opción de cajero:\n" +
-                           "1.- Cajero 1\n" +
-                           "2.- Cajero 2\n" +
-                           "3.- Cajero 3\n");
-                            Console.Write(" Ingrese una opción: \n");
-                            switch (servicioCajero = int.Parse(Console.ReadLine()))
-                            {
-                                case 1:
-                                    Console.WriteLine("\nEl cajero 1 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                            "1.- Pago de servicios públicos\n" +
-                            "2.- Cambio de cheques\n" +
-                            "3.- Realice un depósito\n" +
-                            "4.- Emisión de tarjetas de crédito, débito y prepago\n");
-                                    break;
-
-                                case 2:
-                                    Console.WriteLine("\nEl cajero 2 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                                   "1.- Pago de servicios públicos\n" +
-                                   "2.- Cambio de cheques\n" +
-                                   "3.- Realice un depósito\n" +
-                                   "4.- Emisión de Chequeras\n");
-                                    break;
-
-                                case 3:
-                                    Console.WriteLine("\nEl cajero 3 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
-                                    "1.- Pago de servicios públicos\n" +
-                                    "2.- Cambio de cheques\n" +
-                                    "3.- Realice un depósito\n" +
-                                    "4.- Créditos hipotecarios y préstamos para autos\n");
-                                    break;
-                            }
-                            Console.ReadKey();
-                            break;
                      case 4:
                             Console.Clear();
                             Console.WriteLine("Esta transacción es considerada de riesgo: "+servicio4);
@@ -187,8 +117,6 @@ namespace Practica0
                             Console.ReadKey();
                             break;
                     }
-
-
                     break;
                 case 2:
                     Console.Clear();
