@@ -13,9 +13,9 @@ namespace Practica0
         {
         }
 
-        public int tipoUsuario { get; set; }
-        public int servicio { get; set; }
-        public int servicioCajero { get; set; }
+        public static int tipoUsuario { get; set; }
+        public static int servicio { get; set; }
+        public static int servicioCajero { get; set; }
         enum Riesgo { 
         
         Bajo,
@@ -24,12 +24,12 @@ namespace Practica0
         
         }
 
-        Riesgo servicio4 = Riesgo.Bajo;
-        Riesgo servicio5 = Riesgo.Medio;
-        Riesgo servicio6 = Riesgo.Alto;
 
-        public void MostrarMenu() //Metodo para mostrar menu de Opciones
+        public static void MostrarMenu() //Metodo para mostrar menu de Opciones
         {
+            Riesgo servicio4 = Riesgo.Bajo;
+            Riesgo servicio5 = Riesgo.Medio;
+            Riesgo servicio6 = Riesgo.Alto;
 
             Console.WriteLine(" Bienvenido al Sistema del Gran Banco!");
             Console.WriteLine(" Por favor identifíquese como Cliente o Jefe de Cajas?" );
