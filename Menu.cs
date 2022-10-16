@@ -30,7 +30,7 @@ namespace Practica0
 
         public void MostrarMenu() //Metodo para mostrar menu de Opciones
         {
-            Console.WriteLine(" Prueba de Actualización en Git Hub!");
+
             Console.WriteLine(" Bienvenido al Sistema del Gran Banco!");
             Console.WriteLine(" Por favor identifíquese como Cliente o Jefe de Cajas?" );
             Console.WriteLine(" 1.- Cliente");
@@ -193,8 +193,8 @@ namespace Practica0
 
                     break;
                 case 2:
-                    // code block
                     Console.WriteLine("\nUsted se ha identificado como Jefe de Cajas ");
+                    Console.ReadKey();
                     break;
             }
             
