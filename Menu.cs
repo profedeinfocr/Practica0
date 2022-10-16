@@ -9,23 +9,14 @@ namespace Practica0
 {
     internal class Menu
     {
-        public Menu()//Constructor de Clase Menu
-        {
-        }
+        public Menu(){ }//Constructor de Clase Menu
 
         public static int tipoUsuario { get; set; }
         public static int servicio { get; set; }
         public static int servicioCajero { get; set; }
-        enum Riesgo { 
-        
-        Bajo,
-        Medio,
-        Alto
-        
-        }
+        enum Riesgo {Bajo, Medio, Alto} //uso de enum
 
-
-        public static void MostrarMenu() //Metodo para mostrar menu de Opciones
+        public static void MostrarMenu() //Metodo estático para mostrar Menu de Opciones
         {
             Riesgo servicio4 = Riesgo.Bajo;
             Riesgo servicio5 = Riesgo.Medio;
@@ -35,11 +26,12 @@ namespace Practica0
             Console.WriteLine(" Por favor identifíquese como Cliente o Jefe de Cajas?" );
             Console.WriteLine(" 1.- Cliente");
             Console.WriteLine(" 2.- Jefe de Cajas\n");
-            Console.WriteLine(" Ingrese una opción: ");
+            Console.Write(" Ingrese una opción: ");
             
             switch (tipoUsuario =  int.Parse(Console.ReadLine()))
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine(" \nUsted se ha identificado como cliente del banco\n" +
                     "Seleccione el servicio que necesita:\n" +
                 "1.- Pago de Servicios Públicos\n" +
@@ -48,17 +40,18 @@ namespace Practica0
                 "4.- Emisión de tarjetas de crédito, débito y prepago\n" +
                 "5.- Emisión de chequeras\n" +
                 "6.- Créditos hipotecarios y préstamos para autos ");
-                    Console.WriteLine(" Ingrese una opción: \n");
+                    Console.Write(" Ingrese una opción: ");
                     //Console.ReadKey();
                     switch (servicio = int.Parse(Console.ReadLine())) 
                     {
                      case 1:
+                     Console.Clear();
                      Console.WriteLine("\nLos siguientes cajeros le permiten pagar servicios publicos\n" +
                     "por favor elija una opción de cajero:\n" +
                     "1.- Cajero 1\n" +
                     "2.- Cajero 2\n" +
                     "3.- Cajero 3\n" );
-                            Console.WriteLine(" Ingrese una opción: \n");
+                            Console.Write(" Ingrese una opción: \n");
                             switch (servicioCajero = int.Parse(Console.ReadLine())) {
                             case 1:
                                     Console.WriteLine("\nEl cajero 1 podrá ayudarle con los siguientes servicios, elija una opción:\n" +
@@ -87,12 +80,13 @@ namespace Practica0
                             break;
 
                      case 2:
+                            Console.Clear();
                             Console.WriteLine("\nLos siguientes cajeros le permiten cambiar cheques\n" +
                            "por favor elija una opción de cajero:\n" +
                            "1.- Cajero 1\n" +
                            "2.- Cajero 2\n" +
                            "3.- Cajero 3\n");
-                            Console.WriteLine(" Ingrese una opción: \n");
+                            Console.Write(" Ingrese una opción: \n");
                             switch (servicioCajero = int.Parse(Console.ReadLine()))
                             {
                                 case 1:
@@ -121,13 +115,14 @@ namespace Practica0
                             }
                             Console.ReadKey();
                             break;
-                        case 3:
+                     case 3:
+                            Console.Clear();
                             Console.WriteLine("\nLos siguientes cajeros le permiten realizar depósitos\n" +
                            "por favor elija una opción de cajero:\n" +
                            "1.- Cajero 1\n" +
                            "2.- Cajero 2\n" +
                            "3.- Cajero 3\n");
-                            Console.WriteLine(" Ingrese una opción: \n");
+                            Console.Write(" Ingrese una opción: \n");
                             switch (servicioCajero = int.Parse(Console.ReadLine()))
                             {
                                 case 1:
@@ -157,6 +152,7 @@ namespace Practica0
                             Console.ReadKey();
                             break;
                      case 4:
+                            Console.Clear();
                             Console.WriteLine("Esta transacción es considerada de riesgo: "+servicio4);
                             Console.WriteLine("\nUnicamente Cajero 1 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 1:\n" +
@@ -168,6 +164,7 @@ namespace Practica0
                             break;
 
                      case 5:
+                            Console.Clear();
                             Console.WriteLine("Esta transacción es considerada de riesgo: " + servicio5);
                             Console.WriteLine("\nUnicamente Cajero 2 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 2:\n" +
@@ -179,6 +176,7 @@ namespace Practica0
                             break;
 
                      case 6:
+                            Console.Clear();
                             Console.WriteLine("Esta transacción es considerada de riesgo: " + servicio6);
                             Console.WriteLine("\nUnicamente Cajero 3 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 2:\n" +
@@ -193,13 +191,11 @@ namespace Practica0
 
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("\nUsted se ha identificado como Jefe de Cajas ");
                     Console.ReadKey();
                     break;
             }
-            
-            
-
         }
     }
 }
