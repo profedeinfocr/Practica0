@@ -16,6 +16,17 @@ namespace Practica0
         public int tipoUsuario { get; set; }
         public int servicio { get; set; }
         public int servicioCajero { get; set; }
+        enum Riesgo { 
+        
+        Bajo,
+        Medio,
+        Alto
+        
+        }
+
+        Riesgo servicio4 = Riesgo.Bajo;
+        Riesgo servicio5 = Riesgo.Medio;
+        Riesgo servicio6 = Riesgo.Alto;
 
         public void MostrarMenu() //Metodo para mostrar menu de Opciones
         { 
@@ -146,6 +157,7 @@ namespace Practica0
                             Console.ReadKey();
                             break;
                      case 4:
+                            Console.WriteLine("Esta transacción es considerada de riesgo: "+servicio4);
                             Console.WriteLine("\nUnicamente Cajero 1 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 1:\n" +
                            "1.- Pago de servicios públicos\n" +
@@ -156,6 +168,7 @@ namespace Practica0
                             break;
 
                      case 5:
+                            Console.WriteLine("Esta transacción es considerada de riesgo: " + servicio5);
                             Console.WriteLine("\nUnicamente Cajero 2 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 2:\n" +
                             "1.- Pago de servicios públicos\n" +
@@ -166,6 +179,7 @@ namespace Practica0
                             break;
 
                      case 6:
+                            Console.WriteLine("Esta transacción es considerada de riesgo: " + servicio6);
                             Console.WriteLine("\nUnicamente Cajero 3 puede ayudarle con esta transacción\n" +
                            "por favor elija una uno de los servicios que ofrece Cajero 2:\n" +
                             "1.- Pago de servicios públicos\n" +
