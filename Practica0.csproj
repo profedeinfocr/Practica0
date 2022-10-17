@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caja1.cs" />
+    <Compile Include="Caja2.cs" />
+    <Compile Include="Caja3.cs" />
     <Compile Include="Cajero.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Program.cs" />

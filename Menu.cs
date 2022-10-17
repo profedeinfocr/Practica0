@@ -9,7 +9,7 @@ namespace Practica0
 {
     internal class Menu
     {
-        public Menu(){ }//Constructor de Clase Menu
+        public Menu(){ }//Constructor de Clase MenuCliente
 
         public static int tipoUsuario { get; set; }
         public static int servicio { get; set; }

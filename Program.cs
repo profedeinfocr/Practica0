@@ -11,9 +11,8 @@ namespace Practica0
     {
         static void Main(string[] args)
         {
-
+            
             Menu.MostrarMenu();
-
 
         }
     }
