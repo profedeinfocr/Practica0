@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica0
 {
-    public interface ICajero1
-    {
-        void EmitirTarjetaCredito();
-        void EmitirTarjetaDebito();
-        void EmitirTarjetaPrepago();
-
-    }
+   
     public class Caja1 : Cajero, ICajero1
     {
         public Caja1() { }

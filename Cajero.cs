@@ -6,6 +6,28 @@ using System.Threading.Tasks;
 
 namespace Practica0
 {
+    public interface ICajero1
+    {
+        void EmitirTarjetaCredito();
+        void EmitirTarjetaDebito();
+        void EmitirTarjetaPrepago();
+
+    }
+    public interface ICajero2
+    {
+        void EmitirChequeras();
+        void EmitirBonos();
+
+    }
+
+    public interface ICajero3
+    {
+        void CreditosHipotecarios();
+        void PrestamosAutos();
+
+    }
+
+
     public class Cajero
     {
         public Cajero() { }
@@ -29,13 +51,7 @@ namespace Practica0
 
         public void Depositar() { }
 
-        /*public interface ICajero1
-        {
-            void EmitirTarjetaCredito();
-            void EmitirTarjetaDebito();
-            void EmitirTarjetaPrepago();
-
-        }*/
+        
 
         /*class Caja1 : Cajero, ICajero1
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica0
 {
-    internal class Caja3 : Cajero
+    internal class Caja3 : Cajero, ICajero3
     {
         public Caja3() { }
         Cajero C3 = new Cajero();
@@ -29,5 +29,9 @@ namespace Practica0
         public void Deposita()
         { C3.Depositar(); }
 
+        public void CreditosHipotecarios() { }
+        public void PrestamosAutos() { }
+
+        
     }
 }
