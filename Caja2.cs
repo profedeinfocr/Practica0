@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Practica0
 {
-    internal class Caja2 : Cajero
+
+    public interface ICajero2
+    {
+        void EmitirChequeras();
+        void EmitirBonos();
+
+    }
+    internal class Caja2 : Cajero, ICajero2
     {
         public Caja2() { }
         Cajero C2 = new Cajero();
@@ -28,6 +35,10 @@ namespace Practica0
 
         public void Deposita()
         { C2.Depositar(); }
+
+        public void EmitirChequeras() { }
+        public void EmitirBonos() { }
+
 
     }
 }
